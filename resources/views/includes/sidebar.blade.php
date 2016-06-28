@@ -7,12 +7,12 @@
     <!-- Menu -->
     @if(Auth::check() && auth()->user()->isAdmin())
         <ul class="sidebar-menu sm-active-button-bg">
-            <li class="sidebar-menu-item">
-                <a class="sidebar-menu-button" href="#">
-                    <i class="material-icons md-18 m-r-1">dashboard</i>
-                    dashboard
-                </a>
-            </li>
+            {{--<li class="sidebar-menu-item">--}}
+            {{--<a class="sidebar-menu-button" href="#">--}}
+            {{--<i class="material-icons md-18 m-r-1">dashboard</i>--}}
+            {{--dashboard--}}
+            {{--</a>--}}
+            {{--</li>--}}
             {{--<li class="nav-item sidebar-menu-item ">--}}
             {{--<a href="#button" class="nav-link sidebar-menu-button">--}}
             {{--<i class="material-icons md-18 m-r-1">person_outline</i>--}}

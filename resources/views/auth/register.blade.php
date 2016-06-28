@@ -30,6 +30,28 @@
                                     </span>
                             @endif
                         </div>
+                        <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                            <label for="phone" class=" control-label">phone</label>
+                            <input id="phone" type="text" class="form-control" name="phone"
+                                   value="{{ old('phone') }}">
+
+                            @if ($errors->has('phone'))
+                                <span class="help-block">
+                                        <strong>{{ $errors->first('phone') }}</strong>
+                                    </span>
+                            @endif
+                        </div>
+                        <div class="form-group{{ $errors->has('company') ? ' has-error' : '' }}">
+                            <label for="company" class=" control-label">Company</label>
+                            <input id="company" type="text" class="form-control" name="company"
+                                   value="{{ old('company') }}">
+
+                            @if ($errors->has('company'))
+                                <span class="help-block">
+                                        <strong>{{ $errors->first('company') }}</strong>
+                                    </span>
+                            @endif
+                        </div>
 
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="control-label">Password</label>
